@@ -20,7 +20,7 @@ const Photos = () => {
             return (
               <button
                 key={index}
-                className="shadow w-full md:w-img-1/2 mb-1 md:m-img"
+                className="shadow-xl w-full md:w-img-1/2 mb-1 md:m-img"
                 onKeyUp={(e) => {
                   if (e.keyCode === 13) {
                     toggleModal(index)();
@@ -28,7 +28,7 @@ const Photos = () => {
                 }}
                 onClick={toggleModal(index)}
               >
-                <img alt={title} src={source} />
+                <img className="w-full" alt={title} src={source} />
               </button>
             );
           })}
