@@ -2,7 +2,7 @@ module.exports = {
   purge: ["./src/pages/**/*.tsx", "./src/components/**/*.tsx"],
   theme: {
     fontFamily: {
-      body: ["Roboto", "sans-serif"],
+      body: ["Heebo", "sans-serif"],
     },
     extend: {
       margin: {

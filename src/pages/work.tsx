@@ -71,10 +71,10 @@ const Work = () => {
 
   return (
     <Layout title="Work - Derrick Nguyen">
-      <div className="flex flex-col md:flex-row w-4/5 md:w-2/4 mx-auto">
+      <div className="flex flex-col lg:flex-row w-4/5 lg:w-2/4 mx-auto">
         <Navigation
           activeId={activeId}
-          className="w-full mb-6 md:mb-0 md:w-1/4 md:mr-3 pl-5"
+          className="w-full mb-6 lg:mb-0 lg:w-1/4 lg:mr-3 pl-5"
           works={works}
           setActiveId={setActiveId}
         />

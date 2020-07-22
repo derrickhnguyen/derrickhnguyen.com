@@ -2,53 +2,101 @@
   "smallImages": [
     {
       "source": "https://res.cloudinary.com/derrickhnguyen/image/upload/c_scale,w_500/v1595223671/derrickhnguyen/lost-in-japan.jpg",
-      "title": "Lost in Japan"
+      "caption": "Lost in Japan"
     },
     {
       "source": "https://res.cloudinary.com/derrickhnguyen/image/upload/c_scale,w_500/v1595223783/derrickhnguyen/man-walking-in-osaka.jpg",
-      "title": "Osaka Festival"
+      "caption": "Osaka Festival"
     },
     {
       "source": "https://res.cloudinary.com/derrickhnguyen/image/upload/c_scale,w_500/v1595223696/derrickhnguyen/man-painting-mount-fuji.jpg",
-      "title": "Man apinting Mount Fuji"
+      "caption": "Man apinting Mount Fuji"
     },
     {
       "source": "https://res.cloudinary.com/derrickhnguyen/image/upload/c_scale,w_500/v1595223708/derrickhnguyen/kobe.jpg",
-      "title": "Kobe"
+      "caption": "Kobe"
     },
     {
       "source": "https://res.cloudinary.com/derrickhnguyen/image/upload/c_scale,w_500/v1595223689/derrickhnguyen/osaka-festival.jpg",
-      "title": "Osaka Festival"
+      "caption": "Osaka Festival"
     },
     {
       "source": "https://res.cloudinary.com/derrickhnguyen/image/upload/c_scale,w_500/v1595223775/derrickhnguyen/woman-riding-bike-kyoto.jpg",
-      "title": "Woman riding bike in Tokyo"
+      "caption": "Woman riding bike in Tokyo"
+    },
+    {
+      "source": "https://res.cloudinary.com/derrickhnguyen/image/upload/c_scale,w_500/v1595443547/derrickhnguyen/taipei-1.jpg",
+      "caption": "Taipei 1"
+    },
+    {
+      "source": "https://res.cloudinary.com/derrickhnguyen/image/upload/c_scale,w_500/v1595443546/derrickhnguyen/taipei-2.jpg",
+      "caption": "Taipei 2"
+    },
+    {
+      "source": "https://res.cloudinary.com/derrickhnguyen/image/upload/c_scale,w_500/v1595443546/derrickhnguyen/taipei-3.jpg",
+      "caption": "Taipei 3"
+    },
+    {
+      "source": "https://res.cloudinary.com/derrickhnguyen/image/upload/c_scale,w_500/v1595444550/derrickhnguyen/taipei-4.jpg",
+      "caption": "Taipei 4"
+    },
+    {
+      "source": "https://res.cloudinary.com/derrickhnguyen/image/upload/c_scale,w_500/v1595445643/derrickhnguyen/la-grand-central-market.jpg",
+      "caption": "Grand Central Market, Los Angeles"
+    },
+    {
+      "source": "https://res.cloudinary.com/derrickhnguyen/image/upload/c_scale,w_500/v1595445837/derrickhnguyen/seattle-lake-washington.jpg",
+      "caption": "Lake Washington, Seattle"
     }
   ],
   "largeImages": [
     {
       "source": "https://res.cloudinary.com/derrickhnguyen/image/upload/c_scale,w_1200/v1595223671/derrickhnguyen/lost-in-japan.jpg",
-      "title": "Lost in Japan"
+      "caption": "Lost in Japan"
     },
     {
       "source": "https://res.cloudinary.com/derrickhnguyen/image/upload/c_scale,w_1200/v1595223783/derrickhnguyen/man-walking-in-osaka.jpg",
-      "title": "Osaka Festival"
+      "caption": "Osaka Festival"
     },
     {
       "source": "https://res.cloudinary.com/derrickhnguyen/image/upload/c_scale,w_1200/v1595223696/derrickhnguyen/man-painting-mount-fuji.jpg",
-      "title": "Man apinting Mount Fuji"
+      "caption": "Man apinting Mount Fuji"
     },
     {
       "source": "https://res.cloudinary.com/derrickhnguyen/image/upload/c_scale,w_1200/v1595223708/derrickhnguyen/kobe.jpg",
-      "title": "Kobe"
+      "caption": "Kobe"
     },
     {
       "source": "https://res.cloudinary.com/derrickhnguyen/image/upload/c_scale,w_1200/v1595223689/derrickhnguyen/osaka-festival.jpg",
-      "title": "Osaka Festival"
+      "caption": "Osaka Festival"
     },
     {
       "source": "https://res.cloudinary.com/derrickhnguyen/image/upload/c_scale,w_1200/v1595223775/derrickhnguyen/woman-riding-bike-kyoto.jpg",
-      "title": "Woman riding bike in Tokyo"
+      "caption": "Woman riding bike in Tokyo"
+    },
+    {
+      "source": "https://res.cloudinary.com/derrickhnguyen/image/upload/c_scale,w_1200/v1595443547/derrickhnguyen/taipei-1.jpg",
+      "caption": "Taipei 1"
+    },
+    {
+      "source": "https://res.cloudinary.com/derrickhnguyen/image/upload/c_scale,w_1200/v1595443546/derrickhnguyen/taipei-2.jpg",
+      "caption": "Taipei 2"
+    },
+    {
+      "source": "https://res.cloudinary.com/derrickhnguyen/image/upload/c_scale,w_1200/v1595443546/derrickhnguyen/taipei-3.jpg",
+      "caption": "Taipei 3"
+    },
+    {
+      "source": "https://res.cloudinary.com/derrickhnguyen/image/upload/c_scale,w_1200/v1595444550/derrickhnguyen/taipei-4.jpg",
+      "caption": "Taipei 4"
+    },
+    {
+      "source": "https://res.cloudinary.com/derrickhnguyen/image/upload/c_scale,w_1200/v1595445643/derrickhnguyen/la-grand-central-market.jpg",
+      "caption": "Los Angeles, Grand Central Market"
+    },
+    {
+      "source": "https://res.cloudinary.com/derrickhnguyen/image/upload/c_scale,w_1200/v1595445837/derrickhnguyen/seattle-lake-washington.jpg",
+      "caption": "Lake Washington, Seattle"
     }
   ]
 }
