@@ -5,7 +5,7 @@ import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import { Layout } from "../components";
 import images from "../../images.json";
 
-const INITIAL_LIMIT = 6;
+const INITIAL_LIMIT = 9;
 
 const Photos = () => {
   const { smallImages, largeImages } = images;
@@ -19,14 +19,14 @@ const Photos = () => {
   };
 
   return (
-    <Layout title="Photos - Derrick Nguyen">
+    <Layout active="photos" title="Photos - Derrick Nguyen">
       <>
-        <div className="flex flex-wrap justiy-center content-center items-center w-full lg:w-2/4 m-auto">
+        <div className="flex flex-wrap justiy-center content-center items-center w-full m-auto">
           {smallImages.slice(0, limit).map(({ source, caption }, index) => {
             return (
               <button
                 key={index}
-                className="shadow-xl w-full lg:w-img-1/2 mb-1 lg:m-img focus:outline-none focus:shadow-outline hover:opacity-75"
+                className="shadow-xl w-full md:w-img-1/2 lg:w-img-1/3 m-img focus:outline-none focus:shadow-outline hover:opacity-75"
                 onKeyUp={(e) => {
                   if (e.keyCode === 13) {
                     toggleModal(index)();
@@ -42,14 +42,10 @@ const Photos = () => {
         <div className="flex justify-center my-3">
           {limit < smallImages.length && (
             <button
-              className="w-1/4 lg:w-1/6 focus:outline-none focus:shadow-outline border-2 border-transparent hover:border-2 hover:border-white hover:border-solid"
-              onClick={() => setLimit(limit + 4)}
+              className="w-1/4 lg:w-1/6 focus:outline-none focus:shadow-outline border-2 border-transparent border-black border-solid hover:opacity-50"
+              onClick={() => setLimit(limit + 6)}
             >
-              <FontAwesomeIcon
-                className="text-white"
-                size="2x"
-                icon={faCaretDown}
-              />
+              <FontAwesomeIcon size="2x" icon={faCaretDown} />
             </button>
           )}
         </div>

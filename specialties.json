@@ -1,0 +1,46 @@
+{
+  "typescript": {
+    "name": "TypeScript",
+    "url": "https://www.typescriptlang.org/"
+  },
+  "react": {
+    "name": "React",
+    "url": "https://reactjs.org/"
+  },
+  "redux": {
+    "name": "Redux",
+    "url": "https://redux.js.org/"
+  },
+  "next": {
+    "name": "Next",
+    "url": "https://nextjs.org/"
+  },
+  "gatsby": {
+    "name": "Gatsby",
+    "url": "https://www.gatsbyjs.org/"
+  },
+  "graphql": {
+    "name": "GraphQL",
+    "url": "https://graphql.org/"
+  },
+  "apollo": {
+    "name": "Apollo",
+    "url": "https://www.apollographql.com/"
+  },
+  "node": {
+    "name": "Node",
+    "url": "https://nodejs.org/en/"
+  },
+  "express": {
+    "name": "Express",
+    "url": "https://expressjs.com/"
+  },
+  "mongodb": {
+    "name": "MongoDB",
+    "url": "https://www.mongodb.com/"
+  },
+  "mysql": {
+    "name": "MySQL",
+    "url": "https://www.mysql.com/"
+  }
+}

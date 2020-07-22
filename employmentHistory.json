@@ -1,7 +1,16 @@
 {
+  "Compass": {
+    "id": "compass",
+    "companyName": "Compass",
+    "url": "http://compass.com/",
+    "title": "Software Engineer, Sr.",
+    "location": "Seattle, WA",
+    "startToEndDate": "July 2020 - Present"
+  },
   "Axon": {
     "id": "axon",
-    "companyName": "Axon",
+    "companyName": "Axon Enterprise",
+    "url": "http://axon.com/",
     "title": "Software Engineer II",
     "location": "Seattle, WA",
     "startToEndDate": "July 2018 - July 2020",
@@ -20,7 +29,8 @@
   },
   "Siemens": {
     "id": "siemens",
-    "companyName": "Siemens",
+    "companyName": "Siemens PLM Software",
+    "url": "https://www.plm.automation.siemens.com/global/en/",
     "title": "Software Engineer Intern",
     "location": "Cypress, CA",
     "startToEndDate": "October 2016 - April 2018",
@@ -33,6 +43,7 @@
   "LinkedIn": {
     "id": "linkedin",
     "companyName": "LinkedIn",
+    "url": "https://www.linkedin.com/",
     "title": "UI Engineer Intern",
     "location": "Sunnyvale, CA",
     "startToEndDate": "May 2017 - August 2017",
@@ -43,7 +54,8 @@
   },
   "Extron": {
     "id": "extron",
-    "companyName": "Extron",
+    "companyName": "Extron Electronics",
+    "url": "https://www.extron.com/",
     "title": "Web Developer Intern",
     "location": "Anaheim, CA",
     "startToEndDate": "October 2015 - August 2016",
