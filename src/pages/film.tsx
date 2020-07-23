@@ -42,6 +42,7 @@ const Film = () => {
         <div className="flex justify-center my-3">
           {limit < smallImages.length && (
             <button
+              aria-label="Expand more"
               className="w-1/4 lg:w-1/6 focus:outline-none focus:shadow-outline hover:opacity-50"
               onClick={() => setLimit(limit + 6)}
             >

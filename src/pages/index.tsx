@@ -15,11 +15,13 @@ export default function Home() {
     <Layout active="home" title="Home - Derrick Nguyen">
       <div className="flex flex-col justify-center content-center items-center">
         <img
+          alt="Derrick Nguyen"
           className="rounded-full mx-3 mb-6 shadow-2xl"
           src="https://res.cloudinary.com/derrickhnguyen/image/upload/c_fill,h_400,r_max,w_400,x_0/v1595200719/derrickhnguyen/profile-picture.jpg"
         />
         <div className="flex mb-6">
           <a
+            aria-label="Github"
             className="mr-4 hover:opacity-50 focus:outline-none focus:shadow-outline"
             href="https://github.com/derrickhnguyen/"
             target="_blank"
@@ -28,6 +30,7 @@ export default function Home() {
             <FontAwesomeIcon size="lg" icon={faGithub} />
           </a>
           <a
+            aria-label="Twitter"
             className="mr-4 hover:opacity-50 focus:outline-none focus:shadow-outline"
             target="_blank"
             href="https://twitter.com/derrickhnguyen"
@@ -36,6 +39,7 @@ export default function Home() {
             <FontAwesomeIcon size="lg" icon={faTwitter} />
           </a>
           <a
+            aria-label="LinkedIn"
             className="mr-4 hover:opacity-50 focus:outline-none focus:shadow-outline"
             target="_blank"
             href="https://www.linkedin.com/in/derrickhn/"
@@ -44,12 +48,14 @@ export default function Home() {
             <FontAwesomeIcon size="lg" icon={faLinkedin} />
           </a>
           <a
+            aria-label="Instagram"
             className="mr-4 hover:opacity-50 focus:outline-none focus:shadow-outline"
             href="https://www.instagram.com/derrickhnguyen/"
           >
             <FontAwesomeIcon size="lg" icon={faInstagram} />
           </a>
           <a
+            aria-label="Email"
             className="hover:opacity-50 focus:outline-none focus:shadow-outline"
             href="mailto:derrickhnguyen@outlook.com"
           >
