@@ -3,6 +3,7 @@ module.exports = {
   theme: {
     fontFamily: {
       body: ["Heebo", "sans-serif"],
+      logo: ["Allura", "cursive"],
     },
     extend: {
       margin: {

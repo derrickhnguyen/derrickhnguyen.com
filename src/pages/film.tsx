@@ -7,7 +7,7 @@ import images from "../../images.json";
 
 const INITIAL_LIMIT = 9;
 
-const Photos = () => {
+const Film = () => {
   const { smallImages, largeImages } = images;
   const [selectedIndex, setSelectedIndex] = React.useState(0);
   const [limit, setLimit] = React.useState(INITIAL_LIMIT);
@@ -19,7 +19,7 @@ const Photos = () => {
   };
 
   return (
-    <Layout active="photos" title="Photos - Derrick Nguyen">
+    <Layout active="film" title="Film - Derrick Nguyen">
       <>
         <div className="flex flex-wrap justiy-center content-center items-center w-full m-auto">
           {smallImages.slice(0, limit).map(({ source, caption }, index) => {
@@ -62,4 +62,4 @@ const Photos = () => {
   );
 };
 
-export default Photos;
+export default Film;

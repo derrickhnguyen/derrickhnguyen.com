@@ -3,7 +3,7 @@ import Head from "next/head";
 import Navigation from "./Navigation";
 
 interface LayoutProps {
-  active: "home" | "photos" | "resume";
+  active: "home" | "film" | "resume";
   children: React.ReactNode;
   title: string;
 }

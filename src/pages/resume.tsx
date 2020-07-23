@@ -9,14 +9,14 @@ type EmploymentHistoryType = {
   title: string;
   location: string;
   startToEndDate: string;
-  responsibilities?: string[];
+  responsibilities: string[];
 };
 
-const Work = () => {
+const Resume = () => {
   const works: EmploymentHistoryType[] = Object.values(employmentHistory);
 
   return (
-    <Layout active="resume" title="Work - Derrick Nguyen">
+    <Layout active="resume" title="Resume - Derrick Nguyen">
       <div className="flex flex-col w-11/12 lg:w-8/12 mx-auto divide-y-2">
         {works.map((active) => (
           <div className="flex flex-col items-start mb-6 pt-4">
@@ -33,7 +33,7 @@ const Work = () => {
               {active.location} | {active.startToEndDate}
             </h3>
             <ul className="list-disc mt-4 text-lg pl-5">
-              {(active.responsibilities || []).map((item, index) => (
+              {active.responsibilities.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
             </ul>
@@ -44,4 +44,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Resume;

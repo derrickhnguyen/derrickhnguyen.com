@@ -2,38 +2,38 @@ import React from "react";
 import Link from "next/link";
 
 interface NavigationProps {
-  active: "home" | "photos" | "resume";
+  active: "home" | "film" | "resume";
 }
 
 const Navigation = ({ active }: NavigationProps) => {
   return (
-    <nav className="flex justify-center items-center content-center pt-3 pb-8 text-xl">
+    <nav className="flex justify-center items-center content-center pt-3 pb-8 uppercase">
       <Link href="/">
         <a
-          className={`mr-4 underline hover:opacity-75 focus:outline-none focus:shadow-outline ${
-            active === "home" ? "text-orange-600" : ""
+          className={`mr-4 hover:opacity-50 focus:outline-none focus:shadow-outline ${
+            active === "home" ? "text-orange-600 underline" : ""
           }`}
           href="/"
         >
           home
         </a>
       </Link>
-      <Link href="/photos">
+      <Link href="/film">
         <a
-          className={`mr-4 underline hover:opacity-75 focus:outline-none focus:shadow-outline ${
-            active === "photos" ? "text-orange-600" : ""
+          className={`mr-4 hover:opacity-50 focus:outline-none focus:shadow-outline ${
+            active === "film" ? "text-orange-600 underline" : ""
           }`}
-          href="/photos"
+          href="/film"
         >
-          photos
+          film
         </a>
       </Link>
       <Link href="/resume">
         <a
-          className={`underline hover:opacity-75 focus:outline-none focus:shadow-outline ${
-            active === "resume" ? "text-orange-600" : ""
+          className={`hover:opacity-50 focus:outline-none focus:shadow-outline ${
+            active === "resume" ? "text-orange-600 underline" : ""
           }`}
-          href="/work"
+          href="/resume"
         >
           resume
         </a>

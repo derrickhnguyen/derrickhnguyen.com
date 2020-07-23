@@ -15,7 +15,7 @@ export default function Home() {
       <div className="flex flex-col justify-center content-center items-center">
         <img
           className="mx-3 mb-6 shadow-xl"
-          src="https://res.cloudinary.com/derrickhnguyen/image/upload/c_scale,w_500/v1595200719/derrickhnguyen/profile-picture.jpg"
+          src="https://res.cloudinary.com/derrickhnguyen/image/upload/c_scale,w_600/v1595200719/derrickhnguyen/profile-picture.jpg"
         />
         <div className="flex mb-6">
           <a
@@ -52,9 +52,9 @@ export default function Home() {
           </a>
         </div>
         <div className="flex flex-col w-full lg:w-2/4 content-center items-center justify-center">
-          <h1 className="text-3xl">derrick nguyen</h1>
+          <h1 className="font-bold font-logo text-4xl">Derrick Nguyen</h1>
           <div className="text-lg mb-6">
-            software engineer | film photographer
+            Software Engineer | Film Photographer
           </div>
           <div className="text-center">
             <h3 className="font-bold">
