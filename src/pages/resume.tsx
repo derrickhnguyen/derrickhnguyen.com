@@ -1,6 +1,6 @@
 import React from "react";
 import { Layout } from "../components";
-import employmentHistory from "../../employmentHistory.json";
+import work from "../../work.json";
 
 type EmploymentHistoryType = {
   id: string;
@@ -13,32 +13,38 @@ type EmploymentHistoryType = {
 };
 
 const Resume = () => {
-  const works: EmploymentHistoryType[] = Object.values(employmentHistory);
+  const employments: EmploymentHistoryType[] = work.employments;
 
   return (
     <Layout active="resume" title="Resume - Derrick Nguyen">
-      <div className="flex flex-col w-11/12 lg:w-8/12 mx-auto divide-y-2">
-        {works.map((active) => (
-          <div className="flex flex-col items-start mb-6 pt-4">
-            <a
-              className="underline hover:opacity-50 border-transparent hover:border-black border-2 border-dashed focus:outline-none focus:shadow-outline"
-              href={active.url}
-              target="_blank"
-              rel="noopener noreferrer"
+      <div className="flex flex-col w-11/12 lg:w-7/12 mx-auto">
+        <h2 className="text-2xl underline">Employment</h2>
+        <div className="divide-y-2">
+          {employments.map((employment) => (
+            <div
+              key={employment.id}
+              className="flex flex-col items-start mb-6 pt-4"
             >
-              <h1 className="text-3xl">{active.companyName}</h1>
-            </a>
-            <h2 className="text-2xl">{active.title}</h2>
-            <h3 className="text-lg">
-              {active.location} | {active.startToEndDate}
-            </h3>
-            <ul className="list-disc mt-4 text-lg pl-5">
-              {active.responsibilities.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
+              <a
+                className="text-gray-900 hover:opacity-50 border-transparent hover:border-black border border-dashed focus:outline-none focus:shadow-outline"
+                href={employment.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h3 className="text-xl">{employment.companyName}</h3>
+              </a>
+              <h4 className="text-lg">{employment.title}</h4>
+              <h5>
+                {employment.location} | {employment.startToEndDate}
+              </h5>
+              <ul className="list-disc mt-4 pl-5">
+                {employment.responsibilities.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
     </Layout>
   );

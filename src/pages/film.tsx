@@ -42,7 +42,7 @@ const Film = () => {
         <div className="flex justify-center my-3">
           {limit < smallImages.length && (
             <button
-              className="w-1/4 lg:w-1/6 focus:outline-none focus:shadow-outline border-2 border-transparent border-black border-solid hover:opacity-50"
+              className="w-1/4 lg:w-1/6 focus:outline-none focus:shadow-outline hover:opacity-50"
               onClick={() => setLimit(limit + 6)}
             >
               <FontAwesomeIcon size="2x" icon={faCaretDown} />
