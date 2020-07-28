@@ -10,6 +10,7 @@ module.exports = {
         img: "0 4px 4px",
       },
       width: {
+        "img-1/4": "calc(25% - 16px)",
         "img-1/3": "calc(33.33% - 16px)",
         "img-1/2": "calc(50% - 16px)",
       },

@@ -5,7 +5,7 @@ import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import { Layout } from "../components";
 import images from "../../images.json";
 
-const INITIAL_LIMIT = 9;
+const INITIAL_LIMIT = 16;
 
 const Film = () => {
   const { smallImages, largeImages } = images;
@@ -21,12 +21,12 @@ const Film = () => {
   return (
     <Layout active="film" title="Film - Derrick Nguyen">
       <>
-        <div className="flex flex-wrap justiy-center content-center items-center w-full m-auto">
+        <div className="flex flex-wrap justify-center content-center items-baseline w-full">
           {smallImages.slice(0, limit).map(({ source, caption }, index) => {
             return (
               <button
                 key={index}
-                className="shadow-xl w-full md:w-img-1/2 lg:w-img-1/3 m-img focus:outline-none focus:shadow-outline hover:opacity-75"
+                className="shadow-xl w-full md:w-img-1/2 xl:w-img-1/4 m-img focus:outline-none focus:shadow-outline hover:opacity-75"
                 onKeyUp={(e) => {
                   if (e.keyCode === 13) {
                     toggleModal(index)();
@@ -44,7 +44,7 @@ const Film = () => {
             <button
               aria-label="Expand more"
               className="w-1/4 lg:w-1/6 focus:outline-none focus:shadow-outline hover:opacity-50"
-              onClick={() => setLimit(limit + 6)}
+              onClick={() => setLimit(limit + 8)}
             >
               <FontAwesomeIcon size="2x" icon={faCaretDown} />
             </button>
