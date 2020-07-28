@@ -50,7 +50,9 @@ export default function Home() {
           <a
             aria-label="Instagram"
             className="mr-4 hover:opacity-50 focus:outline-none focus:shadow-outline"
+            target="_blank"
             href="https://www.instagram.com/derrickhnguyen/"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon size="lg" icon={faInstagram} />
           </a>
