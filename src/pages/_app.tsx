@@ -1,6 +1,10 @@
-import "../styles/global.css";
+import React from "react";
+import { AppProps } from "next/app";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import "../styles/global.css";
 
-export default function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
-}
+const MyApp = ({ Component, pageProps }: AppProps): React.ReactElement => (
+  <Component {...pageProps} />
+);
+
+export default MyApp;
