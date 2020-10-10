@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
   faTwitter,
-  faInstagram,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -45,15 +44,6 @@ const Home: React.FC<Record<string, unknown>> = () => (
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon size="lg" icon={faLinkedin} />
-        </a>
-        <a
-          aria-label="Instagram"
-          className="mr-4 hover:opacity-50 focus:outline-none focus:shadow-outline"
-          target="_blank"
-          href="https://www.instagram.com/derrickhnguyen/"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon size="lg" icon={faInstagram} />
         </a>
         <a
           aria-label="Email"
