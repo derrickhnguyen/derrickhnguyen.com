@@ -15,7 +15,7 @@ const Home: React.FC<Record<string, unknown>> = () => (
       <img
         alt="Derrick Nguyen"
         className="rounded-full mx-3 mb-6 shadow-2xl"
-        src="https://res.cloudinary.com/derrickhnguyen/image/upload/c_fill,h_400,r_max,w_400,x_0/v1595200719/derrickhnguyen/profile-picture.jpg"
+        src="https://res.cloudinary.com/derrickhnguyen/image/upload/c_fill,h_400,r_max,w_400/v1604974106/derrickhnguyen/profile_picture_1.jpg"
       />
       <div className="flex mb-6">
         <a
