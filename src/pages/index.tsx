@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faInstagram,
   faLinkedin,
   faTwitter,
   faGithub,
@@ -15,7 +16,7 @@ const Home: React.FC<Record<string, unknown>> = () => (
       <img
         alt="Derrick Nguyen"
         className="rounded-full mx-3 mb-6 shadow-2xl"
-        src="https://res.cloudinary.com/derrickhnguyen/image/upload/c_fill,h_650,r_max,w_650/v1604974106/derrickhnguyen/profile_picture_1.jpg"
+        src="https://res.cloudinary.com/derrickhnguyen/image/upload/c_fill,h_500,r_max,w_500/v1595200719/derrickhnguyen/profile-picture.jpg"
       />
       <div className="flex mb-6">
         <a
@@ -44,6 +45,15 @@ const Home: React.FC<Record<string, unknown>> = () => (
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon size="lg" icon={faLinkedin} />
+        </a>
+        <a
+          aria-label="Instagram"
+          className="mr-4 hover:opacity-50 focus:outline-none focus:shadow-outline"
+          target="_blank"
+          href="https://www.instagram.com/derrickhnguyen/"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon size="lg" icon={faInstagram} />
         </a>
         <a
           aria-label="Email"

@@ -4,7 +4,7 @@
       "id": "compass",
       "companyName": "Compass",
       "url": "http://compass.com/",
-      "title": "Software Engineer, Sr.",
+      "titles": ["Software Engineer, Sr."],
       "location": "Remote",
       "startToEndDate": "July 2020 - Present",
       "responsibilities": [
@@ -18,27 +18,24 @@
       "id": "axon",
       "companyName": "Axon Enterprise",
       "url": "http://axon.com/",
-      "title": "Software Engineer II",
+      "titles": ["Software Engineer II", "Software Engineer I"],
       "location": "Seattle, Washington",
       "startToEndDate": "July 2018 - July 2020",
       "responsibilities": [
+        "Instrumental lead front-end engineer for Axon Records, a disruptive records management system for law enforcement.",
+        "Designed and developed Axon Record’s rich text editing feature.",
         "Unified JavaScript configurations to allow internal libraries to be shared across all Axon products.",
         "Led the integration of Evidence.com into Axon Records.",
-        "Designed and developed Axon Record’s rich text editing feature.",
         "Led bi-weekly front end chats to encourage consistent educational engagement in new front end technologies.",
         "Conducted mentorship, pair programming, and code reviews for new hires and junior software engineers.",
-        "Actively helped with recruiting and hiring future colleagues by interviewing candidates and attending debriefing sessions.",
-        "Instrumental front-end engineer for Axon Records, a disruptive records management system for law enforcement.",
-        "Implemented multiple UI features with React, TypeScript, Apollo, GraphQL, and Node.",
-        "Consistently delivered high quality results against many deadlines leading up to the launch of Axon Records.",
-        "Built reusable UI components for our internal libraries, reviewed code for front-end engineers, fixed bugs, among other essential tasks."
+        "Actively helped with recruiting and hiring future colleagues by interviewing candidates and attending debriefing sessions."
       ]
     },
     {
       "id": "siemens",
       "companyName": "Siemens PLM Software",
       "url": "https://www.plm.automation.siemens.com/global/en/",
-      "title": "Software Engineer Intern",
+      "titles": ["Software Engineer Intern"],
       "location": "Cypress, California",
       "startToEndDate": "October 2016 - April 2018",
       "responsibilities": [
@@ -51,7 +48,7 @@
       "id": "linkedin",
       "companyName": "LinkedIn",
       "url": "https://www.linkedin.com/",
-      "title": "UI Engineer Intern",
+      "titles": ["UI Engineer Intern"],
       "location": "Sunnyvale, California",
       "startToEndDate": "May 2017 - August 2017",
       "responsibilities": [
@@ -63,7 +60,7 @@
       "id": "extron",
       "companyName": "Extron Electronics",
       "url": "https://www.extron.com/",
-      "title": "Web Developer Intern",
+      "titles": ["Web Developer Intern"],
       "location": "Anaheim, California",
       "startToEndDate": "October 2015 - August 2016",
       "responsibilities": [

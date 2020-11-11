@@ -30,7 +30,7 @@ const Resume: React.FC<Record<string, unknown>> = () => (
             >
               <h3 className="text-xl">{employment.companyName}</h3>
             </a>
-            <h4 className="text-lg">{employment.title}</h4>
+            <h4 className="text-lg">{employment.titles.join(" ⇽ ")}</h4>
             <h5>
               {employment.location} | {employment.startToEndDate}
             </h5>
