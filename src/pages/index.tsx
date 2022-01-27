@@ -1,11 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faInstagram,
-  faLinkedin,
-  faTwitter,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { Layout } from "../components";
 import work from "../../work.json";
@@ -29,15 +24,6 @@ const Home: React.FC<Record<string, unknown>> = () => (
           <FontAwesomeIcon size="lg" icon={faGithub} />
         </a>
         <a
-          aria-label="Twitter"
-          className="mr-4 hover:opacity-50 focus:outline-none focus:shadow-outline"
-          target="_blank"
-          href="https://twitter.com/derrickhnguyen"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon size="lg" icon={faTwitter} />
-        </a>
-        <a
           aria-label="LinkedIn"
           className="mr-4 hover:opacity-50 focus:outline-none focus:shadow-outline"
           target="_blank"
@@ -45,15 +31,6 @@ const Home: React.FC<Record<string, unknown>> = () => (
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon size="lg" icon={faLinkedin} />
-        </a>
-        <a
-          aria-label="Instagram"
-          className="mr-4 hover:opacity-50 focus:outline-none focus:shadow-outline"
-          target="_blank"
-          href="https://www.instagram.com/derrickhnguyen/"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon size="lg" icon={faInstagram} />
         </a>
         <a
           aria-label="Email"
