@@ -1,4 +1,4 @@
 module.exports = {
-  bracketSpacking: false,
+  bracketSpacing: false,
   trailingComma: "all",
 };

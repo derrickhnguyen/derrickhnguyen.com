@@ -5,7 +5,7 @@ interface NavigationProps {
   active: "home" | "film" | "resume";
 }
 
-const Navigation = ({ active }: NavigationProps) => {
+const Navigation = ({active}: NavigationProps) => {
   return (
     <nav className="flex justify-center items-center content-center pt-3 pb-8 uppercase">
       <Link href="/">

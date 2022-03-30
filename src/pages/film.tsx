@@ -1,14 +1,14 @@
 import React from "react";
-import Carousel, { Modal, ModalGateway } from "react-images";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
-import { Layout } from "../components";
+import Carousel, {Modal, ModalGateway} from "react-images";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faCaretDown} from "@fortawesome/free-solid-svg-icons";
+import {Layout} from "../components";
 import images from "../../images.json";
 
 const INITIAL_LIMIT = 16;
 
 const Film: React.FC<Record<string, unknown>> = () => {
-  const { smallImages, largeImages } = images;
+  const {smallImages, largeImages} = images;
   const [selectedIndex, setSelectedIndex] = React.useState(0);
   const [limit, setLimit] = React.useState(INITIAL_LIMIT);
   const [isOpen, setIsOpen] = React.useState(false);
@@ -22,7 +22,7 @@ const Film: React.FC<Record<string, unknown>> = () => {
     <Layout active="film" title="Film - Derrick Nguyen">
       <>
         <div className="flex flex-wrap justify-center content-center items-baseline w-full">
-          {smallImages.slice(0, limit).map(({ source, caption }, index) => (
+          {smallImages.slice(0, limit).map(({source, caption}, index) => (
             <button
               key={index}
               className="shadow-xl w-full md:w-img-1/2 xl:w-img-1/4 m-img focus:outline-none focus:shadow-outline hover:opacity-75"

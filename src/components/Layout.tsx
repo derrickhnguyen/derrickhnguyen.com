@@ -8,19 +8,17 @@ interface LayoutProps {
   title: string;
 }
 
-const Layout = ({ active, children, title }: LayoutProps) => {
-  return (
-    <>
-      <Head>
-        <title>{title}</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <div className="flex flex-col min-h-screen bg-white text-black p-8">
-        <Navigation active={active} />
-        <main>{children}</main>
-      </div>
-    </>
-  );
-};
+const Layout = ({active, children, title}: LayoutProps) => (
+  <>
+    <Head>
+      <title>{title}</title>
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
+    <div className="flex flex-col min-h-screen bg-white text-black p-8">
+      <Navigation active={active} />
+      <main>{children}</main>
+    </div>
+  </>
+);
 
 export default Layout;

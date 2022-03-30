@@ -1,8 +1,8 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { Layout } from "../components";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faLinkedin, faGithub} from "@fortawesome/free-brands-svg-icons";
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import {Layout} from "../components";
 import work from "../../work.json";
 
 const Home: React.FC<Record<string, unknown>> = () => (
@@ -49,7 +49,7 @@ const Home: React.FC<Record<string, unknown>> = () => (
           <h3 className="font-bold">
             Specialties <span className="text-xs">(not limited to)</span>
           </h3>
-          {work.specialities.map(({ name, url }, index, array) => (
+          {work.specialities.map(({name, url}, index, array) => (
             <React.Fragment key={name}>
               <a
                 className="text-sm text-gray-900 underline hover:opacity-50 border-transparent hover:border-black border border-dashed focus:outline-none focus:shadow-outline"

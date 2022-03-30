@@ -1,16 +1,6 @@
 import React from "react";
-import { Layout } from "../components";
+import {Layout} from "../components";
 import work from "../../work.json";
-
-type EmploymentHistoryType = {
-  id: string;
-  companyName: string;
-  url: string;
-  title: string;
-  location: string;
-  startToEndDate: string;
-  responsibilities: string[];
-};
 
 const Resume: React.FC<Record<string, unknown>> = () => (
   <Layout active="resume" title="Resume - Derrick Nguyen">
