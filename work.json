@@ -1,13 +1,36 @@
 {
   "employments": [
     {
+      "id": "axon-academy",
+      "companyName": "Axon Enterprise",
+      "url": "http://axon.com/",
+      "titles": ["Senior Software Engineer"],
+      "location": "Remote",
+      "startToEndDate": "December 2024 - Present",
+      "responsibilities": [
+        "Lead frontend development for Axon’s new Learning Management System (Academy).",
+        "Serve as Tech Lead and Scrum Master for the Academy team.",
+        "Collaborate closely with the Axon Training team to support a smooth migration from the legacy system.",
+        "Contribute to backend development in C#/.NET to resolve bugs and improve user experience.",
+        "Help public safety officers get certified to operate Axon devices such as TASER energy weapons, body-worn cameras, and tactical drones."
+      ]
+    },
+    {
       "id": "headspace",
       "companyName": "Headspace",
       "url": "http://headspace.com/",
-      "titles": ["Senior Software Engineer"],
-      "location": "Remote",
-      "startToEndDate": "April 2022 - Present",
-      "responsibilities": []
+        "titles": ["Engineering Manager", "Senior Software Engineer"],
+        "location": "Remote",
+        "startToEndDate": "April 2022 - November 2024",
+          "responsibilities": [
+            "Led the Membership squad as Engineering Manager within the Member Value organization.",
+            "Partnered with product, design, engineering, and marketing teams to plan and deliver new features.",
+            "Launched Headspace Coaching, bringing nationally board-certified coaches to members.",
+            "Migrated headspace.com from Gatsby.js to Next.js, reducing deployment time, improving developer experience, lowering costs, and increasing SEO traffic.",
+            "Designed and implemented a server-side tagging service using Google Tag Manager to enhance website performance and security.",
+            "Collaborated with partners including Sentry, SheerID, Zuora, Purchasely, OneTrust, mParticle, Braze, and Amplitude to ensure seamless integration and drive key initiatives.",
+            "Led the front-end chapter, promoting emerging technologies and continuous learning."
+          ]
     },
     {
       "id": "compass",
@@ -16,12 +39,12 @@
       "titles": ["Senior Software Engineer I"],
       "location": "Remote",
       "startToEndDate": "July 2020 - March 2022",
-      "responsibilities": [
-        "Senior Software Engineer that worked on the Marketing Center platform.",
-        "Defined front-end coding style guide and design principles.",
-        "Defined/established deployment process.",
-        "Conducted mentorship, pair programming, and code reviews for new hires and junior software engineers."
-      ]
+        "responsibilities": [
+          "Senior Software Engineer on the Marketing Center platform.",
+          "Defined front-end coding standards and design principles.",
+          "Established and documented deployment processes.",
+          "Mentored and supported new hires and junior engineers through pair programming and code reviews."
+        ]
     },
     {
       "id": "axon",
@@ -30,15 +53,15 @@
       "titles": ["Software Engineer II", "Software Engineer I"],
       "location": "Seattle, Washington",
       "startToEndDate": "July 2018 - July 2020",
-      "responsibilities": [
-        "Instrumental lead front-end engineer for Axon Records, a disruptive records management system for law enforcement.",
-        "Designed and developed Axon Record’s rich text editing feature.",
-        "Unified JavaScript configurations to allow internal libraries to be shared across all Axon products.",
-        "Led the integration of Evidence.com into Axon Records.",
-        "Led bi-weekly front end chats to encourage consistent educational engagement in new front end technologies.",
-        "Conducted mentorship, pair programming, and code reviews for new hires and junior software engineers.",
-        "Actively helped with recruiting and hiring future colleagues by interviewing candidates and attending debriefing sessions."
-      ]
+        "responsibilities": [
+          "Served as lead front-end engineer for Axon Records, a disruptive law enforcement records management system.",
+          "Designed and developed the rich text editing feature for Axon Records.",
+          "Unified JavaScript configurations to enable shared internal libraries across Axon products.",
+          "Led the integration of Evidence.com into Axon Records.",
+          "Organized bi-weekly front-end technology sessions to foster continuous learning.",
+          "Mentored and reviewed code for new hires and junior engineers.",
+          "Supported recruiting efforts by interviewing candidates and participating in debrief sessions."
+        ]
     },
     {
       "id": "siemens",
@@ -47,11 +70,11 @@
       "titles": ["Software Engineer Intern"],
       "location": "Cypress, California",
       "startToEndDate": "October 2016 - April 2018",
-      "responsibilities": [
-        "Worked on NX, an advanced high-end CAD/CAM/CE software.",
-        "Designed and implemented a validity checker to allow users to analyze and ensure that their model data is correct.",
-        "Reduced bug regressions."
-      ]
+        "responsibilities": [
+          "Developed for NX, a high-end CAD/CAM/CE software suite.",
+          "Designed and implemented a validity checker to help users analyze and validate model data.",
+          "Reduced bug regressions through proactive development and testing."
+        ]
     },
     {
       "id": "linkedin",
@@ -60,10 +83,10 @@
       "titles": ["UI Engineer Intern"],
       "location": "Sunnyvale, California",
       "startToEndDate": "May 2017 - August 2017",
-      "responsibilities": [
-        "Worked with the Web Frameworks team that builds internal tools and plugins for front-end engineers.",
-        "Designed and implemented a web application that allows front-end engineers to track, debug, and analyze their service configuration in a more efficient way."
-      ]
+        "responsibilities": [
+          "Built internal tools and plugins as part of the Web Frameworks team.",
+          "Designed and implemented a web application to help front-end engineers track, debug, and analyze service configurations more efficiently."
+        ]
     },
     {
       "id": "extron",
@@ -72,13 +95,13 @@
       "titles": ["Web Developer Intern"],
       "location": "Anaheim, California",
       "startToEndDate": "October 2015 - August 2016",
-      "responsibilities": [
-        "Worked with the Web team that builds and maintains the company’s e-commerce website.",
-        "Collaborated with product managers, writers, and designers to update and create new content.",
-        "Improved website’s accessibility features.",
-        "Analyzed databases in SQL to improve usability and experience."
-      ]
-    }
+        "responsibilities": [
+          "Developed and maintained the company’s e-commerce website as part of the Web team.",
+          "Collaborated with product managers, writers, and designers to create and update content.",
+          "Improved website accessibility features.",
+          "Analyzed SQL databases to enhance usability and user experience."
+        ]
+      }
   ],
   "specialities": [
     {
