@@ -19,18 +19,18 @@
       "id": "headspace",
       "companyName": "Headspace",
       "url": "http://headspace.com/",
-        "titles": ["Engineering Manager", "Senior Software Engineer"],
-        "location": "Remote",
-        "startToEndDate": "April 2022 - November 2024",
-          "responsibilities": [
-            "Led the Membership squad as Engineering Manager within the Member Value organization.",
-            "Partnered with product, design, engineering, and marketing teams to plan and deliver new features.",
-            "Launched Headspace Coaching, bringing nationally board-certified coaches to members.",
-            "Migrated headspace.com from Gatsby.js to Next.js, reducing deployment time, improving developer experience, lowering costs, and increasing SEO traffic.",
-            "Designed and implemented a server-side tagging service using Google Tag Manager to enhance website performance and security.",
-            "Collaborated with partners including Sentry, SheerID, Zuora, Purchasely, OneTrust, mParticle, Braze, and Amplitude to ensure seamless integration and drive key initiatives.",
-            "Led the front-end chapter, promoting emerging technologies and continuous learning."
-          ]
+      "titles": ["Engineering Manager", "Senior Software Engineer"],
+      "location": "Remote",
+      "startToEndDate": "April 2022 - November 2024",
+      "responsibilities": [
+        "Led the Membership squad as Engineering Manager within the Member Value organization.",
+        "Partnered with product, design, engineering, and marketing teams to plan and deliver new features.",
+        "Launched Headspace Coaching, bringing nationally board-certified coaches to members.",
+        "Migrated headspace.com from Gatsby.js to Next.js, reducing deployment time, improving developer experience, lowering costs, and increasing SEO traffic.",
+        "Designed and implemented a server-side tagging service using Google Tag Manager to enhance website performance and security.",
+        "Collaborated with partners including Sentry, SheerID, Zuora, Purchasely, OneTrust, mParticle, Braze, and Amplitude to ensure seamless integration and drive key initiatives.",
+        "Led the front-end chapter, promoting emerging technologies and continuous learning."
+      ]
     },
     {
       "id": "compass",
@@ -39,12 +39,12 @@
       "titles": ["Senior Software Engineer I"],
       "location": "Remote",
       "startToEndDate": "July 2020 - March 2022",
-        "responsibilities": [
-          "Senior Software Engineer on the Marketing Center platform.",
-          "Defined front-end coding standards and design principles.",
-          "Established and documented deployment processes.",
-          "Mentored and supported new hires and junior engineers through pair programming and code reviews."
-        ]
+      "responsibilities": [
+        "Senior Software Engineer on the Marketing Center platform.",
+        "Defined front-end coding standards and design principles.",
+        "Established and documented deployment processes.",
+        "Mentored and supported new hires and junior engineers through pair programming and code reviews."
+      ]
     },
     {
       "id": "axon",
@@ -53,15 +53,15 @@
       "titles": ["Software Engineer II", "Software Engineer I"],
       "location": "Seattle, Washington",
       "startToEndDate": "July 2018 - July 2020",
-        "responsibilities": [
-          "Served as lead front-end engineer for Axon Records, a disruptive law enforcement records management system.",
-          "Designed and developed the rich text editing feature for Axon Records.",
-          "Unified JavaScript configurations to enable shared internal libraries across Axon products.",
-          "Led the integration of Evidence.com into Axon Records.",
-          "Organized bi-weekly front-end technology sessions to foster continuous learning.",
-          "Mentored and reviewed code for new hires and junior engineers.",
-          "Supported recruiting efforts by interviewing candidates and participating in debrief sessions."
-        ]
+      "responsibilities": [
+        "Served as lead front-end engineer for Axon Records, a disruptive law enforcement records management system.",
+        "Designed and developed the rich text editing feature for Axon Records.",
+        "Unified JavaScript configurations to enable shared internal libraries across Axon products.",
+        "Led the integration of Evidence.com into Axon Records.",
+        "Organized bi-weekly front-end technology sessions to foster continuous learning.",
+        "Mentored and reviewed code for new hires and junior engineers.",
+        "Supported recruiting efforts by interviewing candidates and participating in debrief sessions."
+      ]
     },
     {
       "id": "siemens",
@@ -70,11 +70,11 @@
       "titles": ["Software Engineer Intern"],
       "location": "Cypress, California",
       "startToEndDate": "October 2016 - April 2018",
-        "responsibilities": [
-          "Developed for NX, a high-end CAD/CAM/CE software suite.",
-          "Designed and implemented a validity checker to help users analyze and validate model data.",
-          "Reduced bug regressions through proactive development and testing."
-        ]
+      "responsibilities": [
+        "Developed for NX, a high-end CAD/CAM/CE software suite.",
+        "Designed and implemented a validity checker to help users analyze and validate model data.",
+        "Reduced bug regressions through proactive development and testing."
+      ]
     },
     {
       "id": "linkedin",
@@ -83,10 +83,10 @@
       "titles": ["UI Engineer Intern"],
       "location": "Sunnyvale, California",
       "startToEndDate": "May 2017 - August 2017",
-        "responsibilities": [
-          "Built internal tools and plugins as part of the Web Frameworks team.",
-          "Designed and implemented a web application to help front-end engineers track, debug, and analyze service configurations more efficiently."
-        ]
+      "responsibilities": [
+        "Built internal tools and plugins as part of the Web Frameworks team.",
+        "Designed and implemented a web application to help front-end engineers track, debug, and analyze service configurations more efficiently."
+      ]
     },
     {
       "id": "extron",
@@ -95,13 +95,13 @@
       "titles": ["Web Developer Intern"],
       "location": "Anaheim, California",
       "startToEndDate": "October 2015 - August 2016",
-        "responsibilities": [
-          "Developed and maintained the company’s e-commerce website as part of the Web team.",
-          "Collaborated with product managers, writers, and designers to create and update content.",
-          "Improved website accessibility features.",
-          "Analyzed SQL databases to enhance usability and user experience."
-        ]
-      }
+      "responsibilities": [
+        "Developed and maintained the company’s e-commerce website as part of the Web team.",
+        "Collaborated with product managers, writers, and designers to create and update content.",
+        "Improved website accessibility features.",
+        "Analyzed SQL databases to enhance usability and user experience."
+      ]
+    }
   ],
   "specialities": [
     {
@@ -135,29 +135,48 @@
       "url": "https://graphql.org/"
     },
     {
-      "id": "apollo",
-      "name": "Apollo",
-      "url": "https://www.apollographql.com/"
-    },
-    {
       "id": "node",
       "name": "Node",
       "url": "https://nodejs.org/en/"
     },
     {
-      "id": "express",
-      "name": "Express",
-      "url": "https://expressjs.com/"
-    },
-    {
-      "id": "mongodb",
-      "name": "MongoDB",
-      "url": "https://www.mongodb.com/"
-    },
-    {
       "id": "mysql",
       "name": "MySQL",
       "url": "https://www.mysql.com/"
+    },
+    {
+      "id": "dotnet",
+      "name": ".NET",
+      "url": "https://dotnet.microsoft.com/"
+    }
+  ],
+  "educations": [
+    {
+      "id": "gt-omscs",
+      "schoolName": "Gerogia Institute of Technology",
+      "url": "https://www.omscs.gatech.edu/",
+      "degree": "Master of Science in Computer Science",
+      "startToEndDate": "January 2026 - Present"
+    },
+    {
+      "id": "csulb",
+      "schoolName": "California State University, Long Beach",
+      "url": "https://www.csulb.edu/",
+      "degree": "Bachelor of Science in Computer Science",
+      "startToEndDate": "August 2014 - August 2018",
+      "courses": [
+        "Computer Architecture",
+        "Computer Networks",
+        "Computer Security",
+        "Data Structures and Algorithms",
+        "Database Systems",
+        "Distributed Computing",
+        "Object-Oriented Programming",
+        "Operating Systems",
+        "Probability and Statistics",
+        "Programming Languages",
+        "Software Engineering"
+      ]
     }
   ]
 }

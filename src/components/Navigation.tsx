@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 interface NavigationProps {
-  active: "home" | "film" | "resume";
+  active: "about" | "employment" | "education";
 }
 
 const Navigation = ({active}: NavigationProps) => (
@@ -10,21 +10,31 @@ const Navigation = ({active}: NavigationProps) => (
     <Link href="/">
       <a
         className={`mr-4 hover:opacity-50 focus:outline-none focus:shadow-outline ${
-          active === "home" ? "text-orange-600 underline" : ""
+          active === "about" ? "text-orange-600 underline" : ""
         }`}
         href="/"
       >
-        home
+        about
       </a>
     </Link>
-    <Link href="/resume">
+    <Link href="/employment">
       <a
         className={`hover:opacity-50 focus:outline-none focus:shadow-outline ${
-          active === "resume" ? "text-orange-600 underline" : ""
+          active === "employment" ? "text-orange-600 underline" : ""
         }`}
-        href="/resume"
+        href="/employment"
       >
-        resume
+        employment
+      </a>
+    </Link>
+    <Link href="/education">
+      <a
+        className={`ml-4 hover:opacity-50 focus:outline-none focus:shadow-outline ${
+          active === "education" ? "text-orange-600 underline" : ""
+        }`}
+        href="/education"
+      >
+        education
       </a>
     </Link>
   </nav>

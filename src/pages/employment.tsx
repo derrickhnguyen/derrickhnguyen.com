@@ -2,8 +2,8 @@ import React from "react";
 import {Layout} from "../components";
 import work from "../../work.json";
 
-const Resume: React.FC<Record<string, unknown>> = () => (
-  <Layout active="resume" title="Resume - Derrick Nguyen">
+const Employment: React.FC<Record<string, unknown>> = () => (
+  <Layout active="employment" title="Resume - Derrick Nguyen">
     <div className="flex flex-col w-11/12 lg:w-7/12 mx-auto">
       <h2 className="text-2xl underline">Employment</h2>
       <div className="divide-y-2">
@@ -36,4 +36,4 @@ const Resume: React.FC<Record<string, unknown>> = () => (
   </Layout>
 );
 
-export default Resume;
+export default Employment;
