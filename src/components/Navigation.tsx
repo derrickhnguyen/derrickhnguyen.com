@@ -17,16 +17,6 @@ const Navigation = ({active}: NavigationProps) => (
         home
       </a>
     </Link>
-    <Link href="/film">
-      <a
-        className={`mr-4 hover:opacity-50 focus:outline-none focus:shadow-outline ${
-          active === "film" ? "text-orange-600 underline" : ""
-        }`}
-        href="/film"
-      >
-        film
-      </a>
-    </Link>
     <Link href="/resume">
       <a
         className={`hover:opacity-50 focus:outline-none focus:shadow-outline ${
