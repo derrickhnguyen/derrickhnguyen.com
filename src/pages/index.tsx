@@ -42,9 +42,7 @@ const Home: React.FC<Record<string, unknown>> = () => (
       </div>
       <div className="flex flex-col text-center content-center items-center justify-center">
         <h1 className="font-bold font-logo text-4xl">Derrick Nguyen</h1>
-        <div className="text-lg mb-6">
-          Software Engineer
-        </div>
+        <div className="text-lg mb-6">Software Engineer</div>
         <div>
           <h3 className="font-bold">
             Specialties <span className="text-xs">(not limited to)</span>
