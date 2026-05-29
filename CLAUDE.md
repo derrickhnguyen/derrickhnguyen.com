@@ -13,7 +13,7 @@ npx tsc --noEmit  # type-check only, no output
 
 Use `nvm use v24` before running any commands — the project requires Node 24.
 
-Vercel deploys automatically on push to `master`. The build runs `yarn build`, which includes ESLint. **Prettier errors are treated as build errors**, so always run `yarn lint` before pushing.
+Vercel deploys automatically on push to `master`. The build runs `yarn build`, which includes ESLint. **Prettier errors are treated as build errors**. Always run `npx prettier --write src/` then `yarn lint` before committing — Vercel's prettier output can differ from the local ESLint `--fix` pass, so `prettier --write` is the canonical pre-commit step.
 
 ## Architecture
 
