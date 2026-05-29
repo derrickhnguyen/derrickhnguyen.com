@@ -41,8 +41,7 @@ const EXPERIENCE = [
   },
   {
     co: "Headspace",
-    role:
-      'Engineering Manager <span class="arr">←</span> Senior Software Engineer',
+    role: 'Engineering Manager <span class="arr">←</span> Senior Software Engineer',
     when: "Apr 2022 — Nov 2024",
     dur: "2 yrs 8 mos",
     where: "Remote",
@@ -119,12 +118,7 @@ const SKILLS = [
   },
   {
     group: "Building toward",
-    items: [
-      "Electron",
-      "DevOps",
-      "Distributed Systems",
-      "AI / Machine Learning",
-    ],
+    items: ["Electron", "DevOps", "Distributed Systems", "AI / Machine Learning"],
   },
 ];
 
@@ -142,15 +136,7 @@ const NAV_ITEMS = [
 
 type IconName = "github" | "linkedin" | "mail" | "arrow" | "down" | "spark";
 
-function Icon({
-  name,
-  width = 20,
-  height = 20,
-}: {
-  name: IconName;
-  width?: number;
-  height?: number;
-}) {
+function Icon({name, width = 20, height = 20}: {name: IconName; width?: number; height?: number}) {
   const paths: Record<IconName, React.ReactNode> = {
     github: (
       <path
@@ -176,12 +162,7 @@ function Icon({
           stroke="currentColor"
           strokeWidth="1.7"
         />
-        <path
-          d="M3 6.5l9 6 9-6"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.7"
-        />
+        <path d="M3 6.5l9 6 9-6" fill="none" stroke="currentColor" strokeWidth="1.7" />
       </>
     ),
     arrow: (
@@ -205,10 +186,7 @@ function Icon({
       />
     ),
     spark: (
-      <path
-        fill="currentColor"
-        d="M12 2l1.6 6.4L20 10l-6.4 1.6L12 18l-1.6-6.4L4 10l6.4-1.6z"
-      />
+      <path fill="currentColor" d="M12 2l1.6 6.4L20 10l-6.4 1.6L12 18l-1.6-6.4L4 10l6.4-1.6z" />
     ),
   };
 
@@ -234,13 +212,7 @@ interface RevealProps {
   [key: string]: unknown;
 }
 
-function Reveal({
-  as = "div",
-  delay = 0,
-  className = "",
-  children,
-  ...rest
-}: RevealProps) {
+function Reveal({as = "div", delay = 0, className = "", children, ...rest}: RevealProps) {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const ref = useRef<any>(null);
   const [shown, setShown] = useState(false);
@@ -252,10 +224,7 @@ function Reveal({
     const reveal = () => setTimeout(() => setShown(true), delay);
 
     const rect = el.getBoundingClientRect();
-    if (
-      rect.top < window.innerHeight * 0.92 ||
-      typeof IntersectionObserver === "undefined"
-    ) {
+    if (rect.top < window.innerHeight * 0.92 || typeof IntersectionObserver === "undefined") {
       reveal();
       return;
     }
@@ -281,9 +250,7 @@ function Reveal({
     as,
     {
       ref,
-      className: `reveal${shown ? " in" : ""}${
-        className ? " " + className : ""
-      }`,
+      className: `reveal${shown ? " in" : ""}${className ? " " + className : ""}`,
       ...rest,
     },
     children,
@@ -341,21 +308,12 @@ function Nav() {
         </a>
         <div className="nav-links">
           {NAV_ITEMS.map((n) => (
-            <a
-              key={n.id}
-              href={`#${n.id}`}
-              className={active === n.id ? "active" : ""}
-            >
+            <a key={n.id} href={`#${n.id}`} className={active === n.id ? "active" : ""}>
               {n.label}
             </a>
           ))}
         </div>
-        <a
-          className="nav-cta"
-          href={LINKS.linkedin}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a className="nav-cta" href={LINKS.linkedin} target="_blank" rel="noopener noreferrer">
           Let&apos;s talk
         </a>
       </div>
@@ -378,12 +336,10 @@ function Hero() {
               <span className="ln accent">Nguyen.</span>
             </Reveal>
             <Reveal className="hero-lede" delay={140} as="p">
-              I build <strong>data-heavy web apps used by millions</strong>.
-              From a learning platform for half a million officers to consumer
-              products at Headspace. I pair deep frontend craft with the{" "}
-              <strong>people skills to lead teams</strong>, and I&apos;m never
-              done learning: now going deep on{" "}
-              <strong>AI at Georgia Tech</strong>.
+              I build <strong>data-heavy web apps used by millions</strong>. From a learning
+              platform for half a million officers to consumer products at Headspace. I pair deep
+              frontend craft with the <strong>people skills to lead teams</strong>, and I&apos;m
+              never done learning: now going deep on <strong>AI at Georgia Tech</strong>.
             </Reveal>
             <Reveal className="hero-actions" delay={260} as="div">
               <a className="btn btn-primary" href="#experience">
@@ -451,21 +407,18 @@ function About() {
         <Reveal className="about-body" as="div">
           <p>
             I&apos;m a senior software engineer who loves building{" "}
-            <span className="hl">data-heavy web apps</span>. Frontend is my
-            specialty, but I happily tinker across the stack.
+            <span className="hl">data-heavy web apps</span>. Frontend is my specialty, but I happily
+            tinker across the stack.
           </p>
           <p>
-            Over the past several years I&apos;ve shipped products{" "}
-            <strong>used by millions</strong>: Axon Academy for 500K+ officers,
-            the headspace.com platform, and Compass&apos;s Marketing Center for
-            30K+ agents. At Headspace I stepped up to{" "}
+            Over the past several years I&apos;ve shipped products <strong>used by millions</strong>
+            : Axon Academy for 500K+ officers, the headspace.com platform, and Compass&apos;s
+            Marketing Center for 30K+ agents. At Headspace I stepped up to{" "}
             <strong>Engineering Manager</strong>, leading a team of five.
           </p>
           <p>
-            I&apos;m{" "}
-            <span className="hl">not a fan of sticking to one thing</span>. I
-            love expanding, which is why I&apos;m back in school at Georgia Tech
-            specializing in
+            I&apos;m <span className="hl">not a fan of sticking to one thing</span>. I love
+            expanding, which is why I&apos;m back in school at Georgia Tech specializing in
             <strong> Artificial Intelligence</strong>.
           </p>
         </Reveal>
@@ -503,10 +456,7 @@ function Experience() {
                   <Icon name="spark" width={13} height={13} /> {x.flagship}
                 </span>
               </div>
-              <div
-                className="xp-role"
-                dangerouslySetInnerHTML={{__html: x.role}}
-              />
+              <div className="xp-role" dangerouslySetInnerHTML={{__html: x.role}} />
               <ul className="xp-bullets">
                 {x.bullets.map((b, j) => (
                   <li key={j} dangerouslySetInnerHTML={{__html: b}} />
@@ -556,10 +506,7 @@ function Education() {
             <h3>{e.school}</h3>
             <div className="degree">{e.degree}</div>
             <div className="when">{e.when}</div>
-            <div
-              className="focus"
-              dangerouslySetInnerHTML={{__html: e.focus}}
-            />
+            <div className="focus" dangerouslySetInnerHTML={{__html: e.focus}} />
             <div className="bignum">&apos;{e.num}</div>
           </Reveal>
         ))}
@@ -619,8 +566,8 @@ function Contact() {
           something <span className="accent">good.</span>
         </h2>
         <p className="contact-sub">
-          I&apos;m always happy to talk shop about shipping at scale,
-          engineering leadership, or where AI is taking the craft.
+          I&apos;m always happy to talk shop about shipping at scale, engineering leadership, or
+          where AI is taking the craft.
         </p>
         <div className="contact-links">
           <a
