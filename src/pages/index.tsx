@@ -602,16 +602,59 @@ function Contact() {
 // PAGE
 // ============================================================
 
+const SITE_URL = "https://derrickhnguyen.com";
+const OG_IMAGE =
+  "https://res.cloudinary.com/derrickhnguyen/image/upload/c_fill,g_face,h_630,w_1200/v1595200719/derrickhnguyen/profile-picture.jpg";
+const META_DESC =
+  "Senior software engineer building data-heavy web apps used by millions. Frontend at scale, engineering leadership, and AI at Georgia Tech.";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Derrick Nguyen",
+  jobTitle: "Senior Software Engineer",
+  url: SITE_URL,
+  image: OG_IMAGE,
+  sameAs: ["https://linkedin.com/in/derrickhn", "https://github.com/derrickhnguyen"],
+  worksFor: {"@type": "Organization", name: "Axon"},
+  alumniOf: [
+    {"@type": "CollegeOrUniversity", name: "Georgia Institute of Technology"},
+    {"@type": "CollegeOrUniversity", name: "California State University, Long Beach"},
+  ],
+  knowsAbout: ["React", "TypeScript", "Next.js", "Frontend Engineering", "Artificial Intelligence"],
+};
+
 export default function Portfolio() {
   return (
     <>
       <Head>
         <title>Derrick Nguyen — Senior Software Engineer</title>
-        <meta
-          name="description"
-          content="Derrick Nguyen — senior software engineer building data-heavy web apps used by millions. Frontend at scale, engineering leadership, and AI at Georgia Tech."
-        />
+        <meta name="description" content={META_DESC} />
+        <link rel="canonical" href={SITE_URL} />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={SITE_URL} />
+        <meta property="og:title" content="Derrick Nguyen — Senior Software Engineer" />
+        <meta property="og:description" content={META_DESC} />
+        <meta property="og:image" content={OG_IMAGE} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Derrick Nguyen" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Derrick Nguyen — Senior Software Engineer" />
+        <meta name="twitter:description" content={META_DESC} />
+        <meta name="twitter:image" content={OG_IMAGE} />
+
         <link rel="icon" href="/favicon.ico" />
+
+        {/* JSON-LD */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}
+        />
       </Head>
       <Nav />
       <main>
