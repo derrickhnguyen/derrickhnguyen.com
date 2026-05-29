@@ -630,7 +630,10 @@ export default function Portfolio() {
       <Head>
         <title>Derrick Nguyen — Senior Software Engineer</title>
         <meta name="description" content={META_DESC} />
-        <meta name="google-site-verification" content="VJ860SdsIWkH2-SjCcZr0jNG6N0Oh0UduhHAeGIs9WU" />
+        <meta
+          name="google-site-verification"
+          content="VJ860SdsIWkH2-SjCcZr0jNG6N0Oh0UduhHAeGIs9WU"
+        />
         <link rel="canonical" href={SITE_URL} />
 
         {/* Open Graph */}
