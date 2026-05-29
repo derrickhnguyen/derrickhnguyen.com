@@ -8,7 +8,7 @@ export default function Experience() {
     <section className="sec sec-dark pad wrap" id="experience">
       <div
         className="float-doodle"
-        style={{right: "1%", bottom: "4%", width: "clamp(90px,11vw,150px)", opacity: 0.5}}
+        style={{right: "1%", bottom: "1%", width: "clamp(90px,11vw,150px)", opacity: 0.5}}
       >
         <Lifter style={{width: "100%"}} />
       </div>

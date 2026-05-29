@@ -9,7 +9,7 @@ export default function Education() {
     <section className="sec sec-light pad wrap" id="education">
       <div
         className="float-doodle"
-        style={{right: "4%", top: "12%", width: "clamp(74px,9vw,118px)", opacity: 0.85}}
+        style={{right: "4%", top: "5%", width: "clamp(74px,9vw,118px)", opacity: 0.85}}
       >
         <Climber style={{width: "100%"}} />
       </div>

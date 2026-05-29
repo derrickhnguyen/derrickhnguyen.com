@@ -45,17 +45,11 @@ export default function Hero() {
             Nguyen<span className="dot">.</span>
           </span>
         </Reveal>
-        <Reveal className="hero-role" delay={150} as="p">
-          <span className="tick" />
-          Senior Software Engineer
-          <span className="tick" />
-          Frontend at scale
-        </Reveal>
         <Reveal className="hero-lede" delay={210} as="p">
-          I build <strong>data-heavy web apps used by millions</strong> — from a learning platform
-          for half a million officers to consumer products at Headspace. I pair deep frontend craft
-          with the <strong>people skills to lead teams</strong>, and I&apos;m never done learning:
-          now going deep on <strong>AI at Georgia Tech</strong>.
+          I build data-heavy web apps used by millions. From a learning platform for half a million
+          officers to consumer products at Headspace. I pair deep frontend craft with the people
+          skills to lead teams, and I&apos;m never done learning: now going deep on AI at Georgia
+          Tech.
         </Reveal>
         <Reveal className="hero-actions" delay={270} as="div">
           <a className="btn btn-primary" href="#experience">

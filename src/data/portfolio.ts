@@ -36,9 +36,9 @@ export const LINKS = {
 
 export const FACTS: Fact[] = [
   {dt: "Currently", dd: "Senior Software Engineer", sub: "Axon · Remote"},
-  {dt: "Studying", dd: "MS Computer Science — AI", sub: "Georgia Tech"},
-  {dt: "Specialty", dd: "Data-heavy frontend, at scale", sub: "+ backend & DevOps"},
-  {dt: "Based", dd: "Remote", sub: "United States"},
+  {dt: "Studying", dd: "MS Computer Science", sub: "Georgia Tech"},
+  {dt: "Specialty", dd: "Data-heavy frontend, at scale", sub: "+ some backend"},
+  {dt: "Based", dd: "Greater Los Angeles Area", sub: "United States"},
 ];
 
 export const EXPERIENCE: Job[] = [

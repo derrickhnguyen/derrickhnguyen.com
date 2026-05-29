@@ -10,7 +10,7 @@ export default function Contact() {
     <section className="sec sec-light pad wrap contact" id="contact">
       <div
         className="float-doodle"
-        style={{right: "4%", top: "0%", width: "clamp(80px,9vw,130px)", opacity: 0.9}}
+        style={{right: "4%", top: "10%", width: "clamp(80px,9vw,130px)", opacity: 0.9}}
       >
         <Sun style={{width: "100%"}} />
       </div>
@@ -60,7 +60,6 @@ export default function Contact() {
       </Reveal>
       <div className="foot">
         <span>© {year} Derrick Nguyen</span>
-        <span className="scrawl">made to move.</span>
       </div>
     </section>
   );

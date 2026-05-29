@@ -22,21 +22,13 @@ export default function About() {
       <div className="about-grid">
         <Reveal className="about-body" as="div">
           <p>
-            I&apos;m a senior software engineer who loves building{" "}
-            <strong>data-heavy web apps</strong>. Frontend is my specialty, but I happily tinker
-            across the stack — backend services, distributed systems, and a bit of DevOps.
+            I&apos;m a senior software engineer who loves building data-heavy web apps. Frontend is
+            my specialty, but I happily tinker across the stack.
           </p>
           <p>
-            Over the past several years I&apos;ve shipped products <strong>used by millions</strong>
-            : Axon Academy for 500K+ officers, the headspace.com platform, and Compass&apos;s
-            Marketing Center for 30K+ agents. At Headspace I stepped up to{" "}
-            <strong>Engineering Manager</strong>, leading a team of five — proof I care as much
-            about <strong>people and process</strong> as I do clean code.
-          </p>
-          <p>
-            I&apos;m <strong>not a fan of standing still</strong>. I love expanding — which is why
-            I&apos;m back in school at Georgia Tech (OMSCS) specializing in{" "}
-            <strong>Artificial Intelligence</strong>, growing the next layer of my craft.
+            Over the past several years I&apos;ve shipped products used by millions : Axon Academy
+            for 500K+ officers, the headspace.com platform, and Compass&apos;s Marketing Center for
+            30K+ agents. At Headspace I stepped up to Engineering Manager, leading a team of five.
           </p>
         </Reveal>
         <Reveal className="about-aside" as="dl" delay={80}>

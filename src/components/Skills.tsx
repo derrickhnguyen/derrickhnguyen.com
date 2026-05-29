@@ -8,7 +8,7 @@ export default function Skills() {
     <section className="sec sec-dark pad wrap" id="skills">
       <div
         className="float-doodle"
-        style={{right: "2%", top: "12%", width: "clamp(110px,14vw,190px)", opacity: 0.55}}
+        style={{right: "2%", top: "20%", width: "clamp(110px,14vw,190px)", opacity: 0.55}}
       >
         <Snowboarder style={{width: "100%"}} />
       </div>
