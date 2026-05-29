@@ -13,14 +13,17 @@ class MyDocument extends Document {
     ctx: DocumentContext,
   ): Promise<DocumentInitialProps> {
     const initialProps = await Document.getInitialProps(ctx);
-    return {...initialProps};
+    return { ...initialProps };
   }
 
   render(): JSX.Element {
     return (
-      <Html>
-        <Head />
-        <body className="font-body">
+      <Html lang="en">
+        <Head>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        </Head>
+        <body>
           <Main />
           <NextScript />
         </body>
