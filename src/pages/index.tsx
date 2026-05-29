@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, {useState, useEffect, useRef} from "react";
 import Head from "next/head";
 
 // ============================================================
@@ -11,18 +11,15 @@ const LINKS = {
   email: "mailto:derrickhnguyen@outlook.com",
 };
 
-const STATS = [
-  { num: "Millions", lbl: "Users reached across shipped products" },
-  { num: "500K+", lbl: "Officers served — Axon Academy" },
-  { num: "30K+", lbl: "Agents — Compass Marketing Center" },
-  { num: "2018", lbl: "Shipping professionally since" },
-];
-
 const FACTS = [
-  { dt: "Currently", dd: "Senior Software Engineer", sub: "Axon · Remote" },
-  { dt: "Studying", dd: "MS Computer Science — AI", sub: "Georgia Tech" },
-  { dt: "Specialty", dd: "Data-heavy frontend, at scale", sub: "+ backend & DevOps" },
-  { dt: "Based", dd: "Remote", sub: "United States" },
+  {dt: "Currently", dd: "Senior Software Engineer", sub: "Axon · Remote"},
+  {dt: "Studying", dd: "MS Computer Science — AI", sub: "Georgia Tech"},
+  {
+    dt: "Specialty",
+    dd: "Data-heavy frontend, at scale",
+    sub: "+ backend & DevOps",
+  },
+  {dt: "Based", dd: "Remote", sub: "United States"},
 ];
 
 const EXPERIENCE = [
@@ -44,7 +41,8 @@ const EXPERIENCE = [
   },
   {
     co: "Headspace",
-    role: 'Engineering Manager <span class="arr">←</span> Senior Software Engineer',
+    role:
+      'Engineering Manager <span class="arr">←</span> Senior Software Engineer',
     when: "Apr 2022 — Nov 2024",
     dur: "2 yrs 8 mos",
     where: "Remote",
@@ -93,7 +91,8 @@ const EDUCATION = [
   {
     school: "Georgia Institute of Technology",
     degree: "Master of Science in Computer Science",
-    focus: "Specialization: <b>Artificial Intelligence</b><br><br>Artificial Intelligence · Knowledge-Based AI · Machine Learning · Natural Language Processing · Human Computer Interaction · Software Development Process · Graduate Introduction to Operating Systems · Advanced Operating Systems · Computer Networks · Systems Design for Cloud Computing",
+    focus:
+      "Specialization: <b>Artificial Intelligence</b><br><br>Artificial Intelligence · Knowledge-Based AI · Machine Learning · Natural Language Processing · Human Computer Interaction · Software Development Process · Graduate Introduction to Operating Systems · Advanced Operating Systems · Computer Networks · Systems Design for Cloud Computing",
     when: "Jan 2026 — Dec 2028",
     current: true,
     num: "26",
@@ -101,7 +100,8 @@ const EDUCATION = [
   {
     school: "California State University, Long Beach",
     degree: "Bachelor of Science in Computer Science",
-    focus: "Computer Architecture · Networks · Security · Data Structures & Algorithms · Database Systems · Distributed Computing · OOP · Operating Systems · Probability & Statistics · Programming Languages · Software Engineering",
+    focus:
+      "Computer Architecture · Networks · Security · Data Structures & Algorithms · Database Systems · Distributed Computing · OOP · Operating Systems · Probability & Statistics · Programming Languages · Software Engineering",
     when: "Aug 2014 — Aug 2018",
     current: false,
     num: "18",
@@ -109,17 +109,31 @@ const EDUCATION = [
 ];
 
 const SKILLS = [
-  { group: "Frontend", items: ["TypeScript", "React", "Redux", "Next.js", "Gatsby", "AngularJS"] },
-  { group: "Backend & Data", items: ["Node.js", "C# / .NET", "GraphQL", "MySQL"] },
-  { group: "Building toward", items: ["Electron", "DevOps", "Distributed Systems", "AI / Machine Learning"] },
+  {
+    group: "Frontend",
+    items: ["TypeScript", "React", "Redux", "Next.js", "Gatsby", "AngularJS"],
+  },
+  {
+    group: "Backend & Data",
+    items: ["Node.js", "C# / .NET", "GraphQL", "MySQL"],
+  },
+  {
+    group: "Building toward",
+    items: [
+      "Electron",
+      "DevOps",
+      "Distributed Systems",
+      "AI / Machine Learning",
+    ],
+  },
 ];
 
 const NAV_ITEMS = [
-  { id: "about", label: "About" },
-  { id: "experience", label: "Experience" },
-  { id: "education", label: "Education" },
-  { id: "skills", label: "Skills" },
-  { id: "contact", label: "Contact" },
+  {id: "about", label: "About"},
+  {id: "experience", label: "Experience"},
+  {id: "education", label: "Education"},
+  {id: "skills", label: "Skills"},
+  {id: "contact", label: "Contact"},
 ];
 
 // ============================================================
@@ -128,28 +142,73 @@ const NAV_ITEMS = [
 
 type IconName = "github" | "linkedin" | "mail" | "arrow" | "down" | "spark";
 
-function Icon({ name, width = 20, height = 20 }: { name: IconName; width?: number; height?: number }) {
+function Icon({
+  name,
+  width = 20,
+  height = 20,
+}: {
+  name: IconName;
+  width?: number;
+  height?: number;
+}) {
   const paths: Record<IconName, React.ReactNode> = {
     github: (
-      <path fill="currentColor" d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 5 18.3 5.3 18.3 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z" />
+      <path
+        fill="currentColor"
+        d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 5 18.3 5.3 18.3 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"
+      />
     ),
     linkedin: (
-      <path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .77 0 1.73v20.54C0 23.22.8 24 1.77 24h20.45c.97 0 1.78-.78 1.78-1.73V1.73C24 .77 23.19 0 22.22 0z" />
+      <path
+        fill="currentColor"
+        d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .77 0 1.73v20.54C0 23.22.8 24 1.77 24h20.45c.97 0 1.78-.78 1.78-1.73V1.73C24 .77 23.19 0 22.22 0z"
+      />
     ),
     mail: (
       <>
-        <rect x="2.5" y="4.5" width="19" height="15" rx="2.5" fill="none" stroke="currentColor" strokeWidth="1.7" />
-        <path d="M3 6.5l9 6 9-6" fill="none" stroke="currentColor" strokeWidth="1.7" />
+        <rect
+          x="2.5"
+          y="4.5"
+          width="19"
+          height="15"
+          rx="2.5"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.7"
+        />
+        <path
+          d="M3 6.5l9 6 9-6"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.7"
+        />
       </>
     ),
     arrow: (
-      <path fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M13 6l6 6-6 6" />
+      <path
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M5 12h14M13 6l6 6-6 6"
+      />
     ),
     down: (
-      <path fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" d="M12 5v14M6 13l6 6 6-6" />
+      <path
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M12 5v14M6 13l6 6 6-6"
+      />
     ),
     spark: (
-      <path fill="currentColor" d="M12 2l1.6 6.4L20 10l-6.4 1.6L12 18l-1.6-6.4L4 10l6.4-1.6z" />
+      <path
+        fill="currentColor"
+        d="M12 2l1.6 6.4L20 10l-6.4 1.6L12 18l-1.6-6.4L4 10l6.4-1.6z"
+      />
     ),
   };
 
@@ -175,7 +234,13 @@ interface RevealProps {
   [key: string]: unknown;
 }
 
-function Reveal({ as = "div", delay = 0, className = "", children, ...rest }: RevealProps) {
+function Reveal({
+  as = "div",
+  delay = 0,
+  className = "",
+  children,
+  ...rest
+}: RevealProps) {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const ref = useRef<any>(null);
   const [shown, setShown] = useState(false);
@@ -187,7 +252,10 @@ function Reveal({ as = "div", delay = 0, className = "", children, ...rest }: Re
     const reveal = () => setTimeout(() => setShown(true), delay);
 
     const rect = el.getBoundingClientRect();
-    if (rect.top < window.innerHeight * 0.92 || typeof IntersectionObserver === "undefined") {
+    if (
+      rect.top < window.innerHeight * 0.92 ||
+      typeof IntersectionObserver === "undefined"
+    ) {
       reveal();
       return;
     }
@@ -199,7 +267,7 @@ function Reveal({ as = "div", delay = 0, className = "", children, ...rest }: Re
           io.disconnect();
         }
       },
-      { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
+      {threshold: 0.12, rootMargin: "0px 0px -8% 0px"},
     );
     io.observe(el);
     const t = setTimeout(() => setShown(true), 2600);
@@ -213,10 +281,12 @@ function Reveal({ as = "div", delay = 0, className = "", children, ...rest }: Re
     as,
     {
       ref,
-      className: `reveal${shown ? " in" : ""}${className ? " " + className : ""}`,
+      className: `reveal${shown ? " in" : ""}${
+        className ? " " + className : ""
+      }`,
       ...rest,
     },
-    children
+    children,
   );
 }
 
@@ -229,7 +299,7 @@ function useScrolled(threshold = 24) {
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > threshold);
     onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("scroll", onScroll, {passive: true});
     return () => window.removeEventListener("scroll", onScroll);
   }, [threshold]);
   return scrolled;
@@ -244,14 +314,13 @@ function useActiveSection(ids: string[]) {
           if (e.isIntersecting) setActive(e.target.id);
         });
       },
-      { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
+      {rootMargin: "-45% 0px -50% 0px", threshold: 0},
     );
     ids.forEach((id) => {
       const el = document.getElementById(id);
       if (el) io.observe(el);
     });
     return () => io.disconnect();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ids.join(",")]);
   return active;
 }
@@ -272,12 +341,21 @@ function Nav() {
         </a>
         <div className="nav-links">
           {NAV_ITEMS.map((n) => (
-            <a key={n.id} href={`#${n.id}`} className={active === n.id ? "active" : ""}>
+            <a
+              key={n.id}
+              href={`#${n.id}`}
+              className={active === n.id ? "active" : ""}
+            >
               {n.label}
             </a>
           ))}
         </div>
-        <a className="nav-cta" href={LINKS.linkedin} target="_blank" rel="noopener noreferrer">
+        <a
+          className="nav-cta"
+          href={LINKS.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Let&apos;s talk
         </a>
       </div>
@@ -300,19 +378,31 @@ function Hero() {
               <span className="ln accent">Nguyen.</span>
             </Reveal>
             <Reveal className="hero-lede" delay={140} as="p">
-              I build <strong>data-heavy web apps used by millions</strong>. From a learning
-              platform for half a million officers to consumer products at Headspace. I pair deep
-              frontend craft with the <strong>people skills to lead teams</strong>, and I&apos;m never
-              done learning: now going deep on <strong>AI at Georgia Tech</strong>.
+              I build <strong>data-heavy web apps used by millions</strong>.
+              From a learning platform for half a million officers to consumer
+              products at Headspace. I pair deep frontend craft with the{" "}
+              <strong>people skills to lead teams</strong>, and I&apos;m never
+              done learning: now going deep on{" "}
+              <strong>AI at Georgia Tech</strong>.
             </Reveal>
             <Reveal className="hero-actions" delay={260} as="div">
               <a className="btn btn-primary" href="#experience">
                 See my work <Icon name="arrow" width={16} height={16} />
               </a>
-              <a className="btn btn-ghost" href={LINKS.github} target="_blank" rel="noopener noreferrer">
+              <a
+                className="btn btn-ghost"
+                href={LINKS.github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Icon name="github" width={16} height={16} /> GitHub
               </a>
-              <a className="btn btn-ghost" href={LINKS.linkedin} target="_blank" rel="noopener noreferrer">
+              <a
+                className="btn btn-ghost"
+                href={LINKS.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Icon name="linkedin" width={16} height={16} /> LinkedIn
               </a>
             </Reveal>
@@ -320,17 +410,13 @@ function Hero() {
 
           <Reveal className="hero-portrait" delay={200} as="div">
             <div className="portrait-frame">
-              <img
-                src="/portrait.jpg"
-                alt="Derrick Nguyen"
-              />
+              <img src="/portrait.jpg" alt="Derrick Nguyen" />
               <div className="portrait-tag">
                 Hi, I&apos;m <b>Derrick</b>
               </div>
             </div>
           </Reveal>
         </div>
-
       </div>
     </header>
   );
@@ -365,18 +451,21 @@ function About() {
         <Reveal className="about-body" as="div">
           <p>
             I&apos;m a senior software engineer who loves building{" "}
-            <span className="hl">data-heavy web apps</span>. Frontend is my specialty, but I
-            happily tinker across the stack.
+            <span className="hl">data-heavy web apps</span>. Frontend is my
+            specialty, but I happily tinker across the stack.
           </p>
           <p>
-            Over the past several years I&apos;ve shipped products <strong>used by millions</strong>:
-            Axon Academy for 500K+ officers, the headspace.com platform, and Compass&apos;s Marketing
-            Center for 30K+ agents. At Headspace I stepped up to{" "}
+            Over the past several years I&apos;ve shipped products{" "}
+            <strong>used by millions</strong>: Axon Academy for 500K+ officers,
+            the headspace.com platform, and Compass&apos;s Marketing Center for
+            30K+ agents. At Headspace I stepped up to{" "}
             <strong>Engineering Manager</strong>, leading a team of five.
           </p>
           <p>
-            I&apos;m <span className="hl">not a fan of sticking to one thing</span>. I love
-            expanding, which is why I&apos;m back in school at Georgia Tech specializing in
+            I&apos;m{" "}
+            <span className="hl">not a fan of sticking to one thing</span>. I
+            love expanding, which is why I&apos;m back in school at Georgia Tech
+            specializing in
             <strong> Artificial Intelligence</strong>.
           </p>
         </Reveal>
@@ -416,11 +505,11 @@ function Experience() {
               </div>
               <div
                 className="xp-role"
-                dangerouslySetInnerHTML={{ __html: x.role }}
+                dangerouslySetInnerHTML={{__html: x.role}}
               />
               <ul className="xp-bullets">
                 {x.bullets.map((b, j) => (
-                  <li key={j} dangerouslySetInnerHTML={{ __html: b }} />
+                  <li key={j} dangerouslySetInnerHTML={{__html: b}} />
                 ))}
               </ul>
               <div className="xp-tags">
@@ -467,7 +556,10 @@ function Education() {
             <h3>{e.school}</h3>
             <div className="degree">{e.degree}</div>
             <div className="when">{e.when}</div>
-            <div className="focus" dangerouslySetInnerHTML={{ __html: e.focus }} />
+            <div
+              className="focus"
+              dangerouslySetInnerHTML={{__html: e.focus}}
+            />
             <div className="bignum">&apos;{e.num}</div>
           </Reveal>
         ))}
@@ -514,7 +606,7 @@ function Contact() {
   const year = new Date().getFullYear();
   return (
     <section className="section wrap contact" id="contact">
-      <Reveal className="section-head" as="div" style={{ marginBottom: "28px" }}>
+      <Reveal className="section-head" as="div" style={{marginBottom: "28px"}}>
         <span className="eyebrow">
           <span className="bar" />
           <span className="idx">05</span> Contact
@@ -527,16 +619,27 @@ function Contact() {
           something <span className="accent">good.</span>
         </h2>
         <p className="contact-sub">
-          I&apos;m always happy to talk shop about shipping at scale, engineering leadership, or where AI is taking the craft.
+          I&apos;m always happy to talk shop about shipping at scale,
+          engineering leadership, or where AI is taking the craft.
         </p>
         <div className="contact-links">
-          <a className="btn btn-primary" href={LINKS.linkedin} target="_blank" rel="noopener noreferrer">
+          <a
+            className="btn btn-primary"
+            href={LINKS.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Icon name="linkedin" width={16} height={16} /> Connect on LinkedIn
           </a>
           <a className="btn btn-ghost" href={LINKS.email}>
             <Icon name="mail" width={16} height={16} /> Email me
           </a>
-          <a className="btn btn-ghost" href={LINKS.github} target="_blank" rel="noopener noreferrer">
+          <a
+            className="btn btn-ghost"
+            href={LINKS.github}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Icon name="github" width={16} height={16} /> GitHub
           </a>
         </div>
